@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  ssh_custom:
+    image: ssh_custom
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "32222:22"
+    environment:
+      - SSH_USERNAME=root
+      - SSH_PASSWORD=docker
+      - SSH_DATADIR_NAME=data
+    volumes:
+      - './data:/data'
