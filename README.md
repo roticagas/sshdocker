@@ -9,4 +9,4 @@ docker compose build
 
 docker compose up -d
 
-## then you can ssh to this server with username root , password docker, file will upload into ./data directory
+## then you can ssh to this server with port 32222, username root , password docker, when upload file to /data, file will be uploaded into ./data directory
